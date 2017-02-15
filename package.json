@@ -21,6 +21,7 @@
     "cz-conventional-changelog": "^1.2.0",
     "enzyme": "^2.7.1",
     "jest": "18.1.0",
+    "jsdom": "^9.11.0",
     "pre-commit": "^1.2.2",
     "react": "~15.4.0",
     "react-addons-test-utils": "^15.4.2",
