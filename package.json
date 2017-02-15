@@ -1,0 +1,41 @@
+{
+  "name": "react-naitve-ui-xg",
+  "version": "0.0.1",
+  "description": "A suit of react native ui.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "lint": "eslint . --fix",
+    "test": "jest --coverage",
+    "coverage": "cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "react-native-datepicker": "^1.4.4"
+  },
+  "devDependencies": {
+    "babel-jest": "18.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "coveralls": "^2.11.16",
+    "cz-conventional-changelog": "^1.2.0",
+    "enzyme": "^2.7.1",
+    "jest": "18.1.0",
+    "pre-commit": "^1.2.2",
+    "react": "~15.4.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-native": "0.41.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
