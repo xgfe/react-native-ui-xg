@@ -4,7 +4,9 @@ react native datePicker component for both Android and IOS, useing DatePikcerAnd
 ## Install
 
 ```bash
-npm install react-native-datepicker --save
+npm install react-native-ui-xg --save
+# or
+# npm install react-native-datepicker --save
 ```
 
 ## Example
@@ -17,8 +19,10 @@ Check [index.android.js](https://github.com/xgfe/react-native-datepicker/blob/ma
 
 ```javascript
 
-import React, { Component } from 'react'
-import DatePicker from 'react-native-datepicker'
+import React, { Component } from 'react';
+import {DatePicker} from 'react-native-ui-xg';
+// or
+// import DatePicker from 'react-native-datepicker';
 
 export default class MyDatePicker extends Component {
   constructor(props){

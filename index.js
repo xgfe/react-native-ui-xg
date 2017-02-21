@@ -1,2 +1,2 @@
 
-export {default as Datepicker} from 'react-native-datepicker';
+export {default as DatePicker} from 'react-native-datepicker';

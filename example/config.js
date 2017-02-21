@@ -1,7 +1,7 @@
-import Datepicker from '../components/Datepicker/example';
+import DatePicker from '../components/DatePicker/example';
 
 const listData = {
-  Datepicker
+  DatePicker
 };
 
 export default listData;
