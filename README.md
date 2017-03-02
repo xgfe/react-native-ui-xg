@@ -17,6 +17,9 @@ import {DatePicker} from 'react-native-ui-xg';
 ## Components
 
 * [DatePicker](https://github.com/xgfe/react-native-ui-xg/tree/master/components/DatePicker)
+* [Drawer](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Drawer/README.md)
+* [Grading](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Grading/README.md)
+* [LabelSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/LabelSelect/README.md)
 
 ## Example
 

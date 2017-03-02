@@ -1,4 +1,4 @@
-## react-native-grading [![Build Status](https://travis-ci.org/Tinysymphony/react-native-grading.svg?branch=master)](https://travis-ci.org/Tinysymphony/react-native-grading) [![Coverage Status](https://coveralls.io/repos/github/Tinysymphony/react-native-grading/badge.svg?branch=master)](https://coveralls.io/github/Tinysymphony/react-native-grading?branch=master)
+## react-native-grading [![Build Status](https://travis-ci.org/xgfe/react-native-grading.svg?branch=master)](https://travis-ci.org/xgfe/react-native-grading) [![Coverage Status](https://coveralls.io/repos/github/Tinysymphony/react-native-grading/badge.svg?branch=master)](https://coveralls.io/github/Tinysymphony/react-native-grading?branch=master)
 
 react-native-grading is a RN component for users to grade scores. Four modes are supplied by the component, `arcs`/`simles`/`stars`/`board`.
 
