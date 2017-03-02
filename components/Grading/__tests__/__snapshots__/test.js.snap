@@ -1,0 +1,459 @@
+exports[`test renders grading modal correctly 1`] = `
+<Modal
+  hardwareAccelerated={false}
+  onRequestClose={[Function]}
+  transparent={true}
+  visible={false}>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+          },
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#00000077",
+            "flex": 1,
+            "justifyContent": "center",
+          },
+        ]
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}>
+      <View
+        style={Object {}}>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "overflow": "hidden",
+              "width": 450,
+            }
+          }>
+          <View>
+            <View
+              style={undefined}>
+              <RCTPicker
+                items={
+                  Array [
+                    Object {
+                      "label": "0.1",
+                      "textColor": undefined,
+                      "value": 0.1,
+                    },
+                    Object {
+                      "label": "0.2",
+                      "textColor": undefined,
+                      "value": 0.2,
+                    },
+                    Object {
+                      "label": "0.3",
+                      "textColor": undefined,
+                      "value": 0.3,
+                    },
+                    Object {
+                      "label": "0.4",
+                      "textColor": undefined,
+                      "value": 0.4,
+                    },
+                    Object {
+                      "label": "0.5",
+                      "textColor": undefined,
+                      "value": 0.5,
+                    },
+                    Object {
+                      "label": "0.6",
+                      "textColor": undefined,
+                      "value": 0.6,
+                    },
+                    Object {
+                      "label": "0.7",
+                      "textColor": undefined,
+                      "value": 0.7,
+                    },
+                    Object {
+                      "label": "0.8",
+                      "textColor": undefined,
+                      "value": 0.8,
+                    },
+                    Object {
+                      "label": "0.9",
+                      "textColor": undefined,
+                      "value": 0.9,
+                    },
+                    Object {
+                      "label": "1.0",
+                      "textColor": undefined,
+                      "value": 1,
+                    },
+                    Object {
+                      "label": "1.1",
+                      "textColor": undefined,
+                      "value": 1.1,
+                    },
+                    Object {
+                      "label": "1.2",
+                      "textColor": undefined,
+                      "value": 1.2,
+                    },
+                    Object {
+                      "label": "1.3",
+                      "textColor": undefined,
+                      "value": 1.3,
+                    },
+                    Object {
+                      "label": "1.4",
+                      "textColor": undefined,
+                      "value": 1.4,
+                    },
+                    Object {
+                      "label": "1.5",
+                      "textColor": undefined,
+                      "value": 1.5,
+                    },
+                    Object {
+                      "label": "1.6",
+                      "textColor": undefined,
+                      "value": 1.6,
+                    },
+                    Object {
+                      "label": "1.7",
+                      "textColor": undefined,
+                      "value": 1.7,
+                    },
+                    Object {
+                      "label": "1.8",
+                      "textColor": undefined,
+                      "value": 1.8,
+                    },
+                    Object {
+                      "label": "1.9",
+                      "textColor": undefined,
+                      "value": 1.9,
+                    },
+                    Object {
+                      "label": "2.0",
+                      "textColor": undefined,
+                      "value": 2,
+                    },
+                    Object {
+                      "label": "2.1",
+                      "textColor": undefined,
+                      "value": 2.1,
+                    },
+                    Object {
+                      "label": "2.2",
+                      "textColor": undefined,
+                      "value": 2.2,
+                    },
+                    Object {
+                      "label": "2.3",
+                      "textColor": undefined,
+                      "value": 2.3,
+                    },
+                    Object {
+                      "label": "2.4",
+                      "textColor": undefined,
+                      "value": 2.4,
+                    },
+                    Object {
+                      "label": "2.5",
+                      "textColor": undefined,
+                      "value": 2.5,
+                    },
+                    Object {
+                      "label": "2.6",
+                      "textColor": undefined,
+                      "value": 2.6,
+                    },
+                    Object {
+                      "label": "2.7",
+                      "textColor": undefined,
+                      "value": 2.7,
+                    },
+                    Object {
+                      "label": "2.8",
+                      "textColor": undefined,
+                      "value": 2.8,
+                    },
+                    Object {
+                      "label": "2.9",
+                      "textColor": undefined,
+                      "value": 2.9,
+                    },
+                    Object {
+                      "label": "3.0",
+                      "textColor": undefined,
+                      "value": 3,
+                    },
+                    Object {
+                      "label": "3.1",
+                      "textColor": undefined,
+                      "value": 3.1,
+                    },
+                    Object {
+                      "label": "3.2",
+                      "textColor": undefined,
+                      "value": 3.2,
+                    },
+                    Object {
+                      "label": "3.3",
+                      "textColor": undefined,
+                      "value": 3.3,
+                    },
+                    Object {
+                      "label": "3.4",
+                      "textColor": undefined,
+                      "value": 3.4,
+                    },
+                    Object {
+                      "label": "3.5",
+                      "textColor": undefined,
+                      "value": 3.5,
+                    },
+                    Object {
+                      "label": "3.6",
+                      "textColor": undefined,
+                      "value": 3.6,
+                    },
+                    Object {
+                      "label": "3.7",
+                      "textColor": undefined,
+                      "value": 3.7,
+                    },
+                    Object {
+                      "label": "3.8",
+                      "textColor": undefined,
+                      "value": 3.8,
+                    },
+                    Object {
+                      "label": "3.9",
+                      "textColor": undefined,
+                      "value": 3.9,
+                    },
+                    Object {
+                      "label": "4.0",
+                      "textColor": undefined,
+                      "value": 4,
+                    },
+                    Object {
+                      "label": "4.1",
+                      "textColor": undefined,
+                      "value": 4.1,
+                    },
+                    Object {
+                      "label": "4.2",
+                      "textColor": undefined,
+                      "value": 4.2,
+                    },
+                    Object {
+                      "label": "4.3",
+                      "textColor": undefined,
+                      "value": 4.3,
+                    },
+                    Object {
+                      "label": "4.4",
+                      "textColor": undefined,
+                      "value": 4.4,
+                    },
+                    Object {
+                      "label": "4.5",
+                      "textColor": undefined,
+                      "value": 4.5,
+                    },
+                    Object {
+                      "label": "4.6",
+                      "textColor": undefined,
+                      "value": 4.6,
+                    },
+                    Object {
+                      "label": "4.7",
+                      "textColor": undefined,
+                      "value": 4.7,
+                    },
+                    Object {
+                      "label": "4.8",
+                      "textColor": undefined,
+                      "value": 4.8,
+                    },
+                    Object {
+                      "label": "4.9",
+                      "textColor": undefined,
+                      "value": 4.9,
+                    },
+                    Object {
+                      "label": "5.0",
+                      "textColor": undefined,
+                      "value": 5,
+                    },
+                  ]
+                }
+                onChange={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                selectedIndex={0}
+                style={
+                  Array [
+                    Object {
+                      "height": 216,
+                    },
+                    undefined,
+                  ]
+                } />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }>
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hasTVPreferredFocus={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                  },
+                  undefined,
+                ]
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 40,
+                      "justifyContent": "center",
+                      "width": 225,
+                    },
+                    Object {
+                      "backgroundColor": "#c7c7c7",
+                    },
+                    Object {
+                      "backgroundColor": "#999",
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                      },
+                      Object {
+                        "color": "#fff",
+                      },
+                      undefined,
+                    ]
+                  }>
+                  Cancel
+                </Text>
+              </View>
+            </View>
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hasTVPreferredFocus={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                  },
+                  undefined,
+                ]
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "height": 40,
+                      "justifyContent": "center",
+                      "width": 225,
+                    },
+                    Object {
+                      "backgroundColor": "#49aec8",
+                    },
+                    Object {
+                      "backgroundColor": "#db4812",
+                    },
+                  ]
+                }>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 18,
+                      },
+                      Object {
+                        "color": "#fff",
+                      },
+                      undefined,
+                    ]
+                  }>
+                  Confirm
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;

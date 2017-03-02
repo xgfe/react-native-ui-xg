@@ -1,0 +1,24 @@
+{
+	"name": "react-native-label-select",
+	"version": "1.0.6",
+	"description": "A label select component for React Native apps",
+	"keywords": [
+		"label",
+		"select",
+		"react-native",
+		"react"
+	],
+	"main": "./index.js",
+	"author": "xgfe",
+	"maintainers": [
+		{
+			"name": "wytiny",
+			"email": "zjutiny@gmail.com"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/Tinysymphony/react-native-label-select/issues"
+	},
+	"homepage": "https://github.com/Tinysymphony/react-native-label-select#readme",
+	"license": "MIT"
+}

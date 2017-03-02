@@ -12,7 +12,10 @@
     "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
-    "react-native-datepicker": "^1.4.4"
+    "react-native-datepicker": "^1.4.4",
+    "react-native-drawer-menu": "^0.1.0",
+    "react-native-grading": "^1.0.3",
+    "react-native-label-select": "^1.0.7"
   },
   "devDependencies": {
     "babel-jest": "18.0.0",
@@ -26,7 +29,8 @@
     "react": "~15.4.0",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-native": "0.41.2"
+    "react-native": "0.41.2",
+    "react-test-renderer": "^15.4.2"
   },
   "config": {
     "commitizen": {

@@ -1,0 +1,12 @@
+{
+    "selectedList": [{
+        "text": "A"
+    }, {
+        "text": "B"
+    }],
+    "list": [{
+        "text": "C"
+    }, {
+        "text": "D"
+    }]
+}

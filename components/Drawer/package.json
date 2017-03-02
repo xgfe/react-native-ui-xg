@@ -1,0 +1,22 @@
+{
+  "name": "react-native-drawer-menu",
+  "version": "0.1.0",
+  "description": "react native drawer component for both Android and IOS",
+  "keywords": [
+    "react-native",
+    "drawer"
+  ],
+  "main": "Drawer/index.js",
+	"author": "xgfe",
+	"maintainers": [
+		{
+			"name": "wytiny",
+			"email": "zjutiny@gmail.com"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/Tinysymphony/react-native-drawer-menu/issues"
+	},
+	"homepage": "https://github.com/Tinysymphony/react-native-drawer-menu#readme",
+  "license": "MIT"
+}
