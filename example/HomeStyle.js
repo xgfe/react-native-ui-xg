@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     color: '#333'
   },
   sceneStyle: {
+    flex: 1,
     marginTop: 44
   },
   title: {

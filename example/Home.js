@@ -5,7 +5,9 @@ import {
   ScrollView,
   TouchableHighlight,
   Image,
-  Navigator
+  Navigator,
+  StatusBar,
+  Platform
 } from 'react-native';
 import CustomNavigationBarStyles from './CustomNavigationBarStyles';
 import styles from './HomeStyle';
@@ -55,34 +57,40 @@ export default class reactNativeUiXg extends Component {
 
   render() {
     return (
-      <Navigator
-        initialRoute={{key: 'home'}}
-        renderScene={this.renderContent}
-        sceneStyle={styles.sceneStyle}
-        navigationBar={
-          <Navigator.NavigationBar
-            navigationStyles={CustomNavigationBarStyles}
-            routeMapper={{
-              LeftButton: (route, navigator, index, navState) => {
-                return (
-                  <TouchableHighlight style={styles.back} underlayColor="lightcyan" onPress={this.navigator.pop}>
-                    <Text style={styles.backText}>Back</Text>
-                  </TouchableHighlight>
-                );
-              },
-              RightButton: (route, navigator, index, navState) => {},
-              Title: (route, navigator, index, navState) => {
-                return (
-                  <View style={styles.navTitle}>
-                    <Text style={styles.navTitleText}>{this.state.title}</Text>
-                  </View>
-                );
-              }
-            }}
-            style={styles.navigationBar}
-          />
-        }
-      />
+      <View style={[{flex: 1, backgroundColor: '#f7f7f8'}, Platform.OS === 'ios' && {paddingTop: 20}]}>
+        <StatusBar
+          backgroundColor="#f7f7f8"
+          barStyle="dark-content"
+        />
+        <Navigator
+          initialRoute={{key: 'home'}}
+          renderScene={this.renderContent}
+          sceneStyle={styles.sceneStyle}
+          navigationBar={
+            <Navigator.NavigationBar
+              navigationStyles={CustomNavigationBarStyles}
+              routeMapper={{
+                LeftButton: (route, navigator, index, navState) => {
+                  return (
+                    <TouchableHighlight style={styles.back} underlayColor="lightcyan" onPress={this.navigator.pop}>
+                      <Text style={styles.backText}>Back</Text>
+                    </TouchableHighlight>
+                  );
+                },
+                RightButton: (route, navigator, index, navState) => {},
+                Title: (route, navigator, index, navState) => {
+                  return (
+                    <View style={styles.navTitle}>
+                      <Text style={styles.navTitleText}>{this.state.title}</Text>
+                    </View>
+                  );
+                }
+              }}
+              style={styles.navigationBar}
+            />
+          }
+        />
+      </View>
     );
   }
 }
