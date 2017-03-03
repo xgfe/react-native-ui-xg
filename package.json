@@ -9,7 +9,9 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "lint": "eslint . --fix",
     "test": "jest --coverage",
-    "coverage": "cat ./coverage/lcov.info | coveralls"
+    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "check": "node ./tools/checkGit",
+    "new": "node ./tools/new"
   },
   "dependencies": {
     "react-native-datepicker": "^1.4.4",
@@ -23,6 +25,7 @@
     "coveralls": "^2.11.16",
     "cz-conventional-changelog": "^1.2.0",
     "enzyme": "^2.7.1",
+    "inquirer": "^3.0.5",
     "jest": "18.1.0",
     "jsdom": "^9.11.0",
     "pre-commit": "^1.2.2",
@@ -41,6 +44,7 @@
     "preset": "react-native"
   },
   "pre-commit": [
+    "check",
     "lint"
   ]
 }
