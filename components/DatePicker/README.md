@@ -1,4 +1,4 @@
-# react-native-datepicker [![Build Status](https://travis-ci.org/xgfe/react-native-datepicker.svg?branch=master)](https://travis-ci.org/xgfe/react-native-datepicker) [![Coverage Status](https://coveralls.io/repos/github/xgfe/react-native-datepicker/badge.svg?branch=master)](https://coveralls.io/github/xgfe/react-native-datepicker?branch=master)
+# react-native-datepicker
 react native datePicker component for both Android and IOS, useing DatePikcerAndroid, TimePickerAndroid and DatePickerIOS
 
 ## Install
@@ -10,7 +10,7 @@ npm install react-native-ui-xg --save
 ```
 
 ## Example
-Check [index.android.js](https://github.com/xgfe/react-native-datepicker/blob/master/index.android.js) in the Example.
+Check [index.js](https://github.com/xgfe/react-native-ui-xg/blob/master/components/DatePicker/example/index.js) in the Example.
 
 ![android](http://xgfe.github.io/react-native-datepicker/img/react-native-datepicker-android.gif)
 ![ios](http://xgfe.github.io/react-native-datepicker/img/react-native-datepicker-ios.gif)
@@ -61,7 +61,7 @@ export default class MyDatePicker extends Component {
 }
 ```
 
-You can check [index.js](https://github.com/xgfe/react-native-datepicker/blob/master/index.android.js) in the Example for detail.
+You can check [index.js](https://github.com/xgfe/react-native-ui-xg/blob/master/components/DatePicker/example/index.js) in the Example for detail.
 
 ## Properties
 

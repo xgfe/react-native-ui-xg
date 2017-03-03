@@ -13,7 +13,7 @@ import Drawer from '../index';
 
 var {width, height, scale} = Dimensions.get('window');
 
-var drawerContent = (
+var drawerContent = shallow(
   <View style={{flex: 1}}>
     <Text>test</Text>
   </View>

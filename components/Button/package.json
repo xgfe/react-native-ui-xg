@@ -1,0 +1,24 @@
+{
+  "name": "react-native-buttons",
+  "version": "0.0.4",
+  "description": "react native button for android.",
+  "main": "Button.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "Button"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-datepicker/components/Button#readme",
+  "dependencies": {
+    "react-native-stylesheet-xg": "^1.0.3",
+    "react-native-colortool": "^0.0.1"
+  }
+}
