@@ -21,4 +21,6 @@
 | disableCancel| false | `bool` | Do not show the cancel button |
 | confirmText | '确定' | `string` | Specify the text of the confirm button |
 | cancelText | '取消' | `string` | Specify the text of the cancel button |
+|cancel | - | 'func' | callback when you cancel|
+|confirm | - | 'func' | callback when you confirm|
 
