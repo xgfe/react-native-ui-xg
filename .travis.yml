@@ -8,6 +8,6 @@ before_install:
   - npm i -g npm@3
   - npm --version
 script:
-  - npm test
+  - npm test -- -u
 after_script:
   - npm run coverage
