@@ -1,0 +1,26 @@
+{
+  "name": "react-native-confirm",
+  "version": "0.0.1",
+  "description": "react native confirm component for both Android and IOS, useing pure JavaScript",
+  "main": "Confirm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "confirm",
+    "react-native-confirm"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg/components/Confirm#readme",
+  "dependencies": {
+    "react-native-stylesheet-xg": "^1.1.0",
+    "react-native-buttons": "^0.0.3",
+    "react-native-input-xg": "^0.0.2"
+  }
+}

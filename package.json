@@ -18,8 +18,10 @@
     "react-native-drawer-menu": "^0.1.0",
     "react-native-grading": "^1.0.3",
     "react-native-label-select": "^1.0.7",
-    "react-native-buttons": "^0.0.3",
-    "react-native-stylesheet-xg": "^1.1.0"
+    "react-native-buttons": "^0.0.4",
+    "react-native-stylesheet-xg": "^1.1.0",
+    "react-native-input-xg": "^0.0.2",
+    "react-native-confirm": "^0.0.1"
   },
   "devDependencies": {
     "babel-jest": "18.0.0",

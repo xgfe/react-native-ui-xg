@@ -116,7 +116,6 @@ export let ButtonType = StyleSheet.create({
 
 export let ButtonOuter = StyleSheet.create({
   btn: {
-    position: 'absolute',
     alignItems: 'center',
     justifyContent: 'center'
   },
