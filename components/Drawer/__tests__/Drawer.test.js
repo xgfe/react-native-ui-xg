@@ -19,7 +19,7 @@ var drawerContent = shallow(
   </View>
 );
 
-var isOpen;
+var isOpen = false;
 let treeA = shallow(
   <Drawer
     drawerContent={drawerContent}
@@ -42,7 +42,7 @@ it('Drawer Test [Type: default, Position: left]', () => {
   expect(instance.isLeft).toEqual(true);
   expect(tree.state('showMask')).toEqual(false);
   instance.openDrawer();
-  setTimeout(function () {
+  requestAnimationFrame(function () {
     expect(tree.state('showMask')).toEqual(true);
     expect(isOpen).toEqual(true);
     expect(instance._onMoveShouldSetPanResponder(null, {
@@ -52,7 +52,7 @@ it('Drawer Test [Type: default, Position: left]', () => {
     })).toEqual(true);
   })
   instance.closeDrawer();
-  setTimeout(function () {
+  requestAnimationFrame(function () {
     expect(tree.state('showMask')).toEqual(false);
     expect(isOpen).toEqual(false);
   }, 0);
@@ -72,7 +72,7 @@ it('Drawer Test [Type: default, Position: left]', () => {
   });
   expect(instance.styles.main.style.left).toEqual(200);
   instance._handlePanResponderEnd();
-  setTimeout(function () {
+  requestAnimationFrame(function () {
     expect(instance.isOpen).toEqual(true);
     expect(instance.styles.main.style.left).toEqual(240);
   }, 0);
@@ -80,7 +80,7 @@ it('Drawer Test [Type: default, Position: left]', () => {
   instance._handlePanResponderMove(null, {
     dx: 100,
   });
-  setTimeout(function () {
+  requestAnimationFrame(function () {
     expect(instance.isOpen).toEqual(false);
     expect(instance.styles.main.style.left).toEqual(0);
   }, 0);
