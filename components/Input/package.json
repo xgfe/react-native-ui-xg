@@ -1,0 +1,24 @@
+{
+  "name": "react-native-input-xg",
+  "version": "0.0.1",
+  "description": "react native input component for both Android and IOS, useing pure JavaScript",
+  "main": "Datepicker.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "input",
+    "react-native-input"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg/components/Input#readme",
+  "dependencies": {
+    "react-native-stylesheet-xg": "^1.1.0"
+  }
+}
