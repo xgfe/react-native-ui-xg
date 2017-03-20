@@ -11,7 +11,7 @@ npm install react-native-ui-xg --save
 ## Usage
 
 ```js
-import {Button, DatePicker, Drawer, Grading, LabelSelect} from 'react-native-ui-xg';
+import {Button, DatePicker, Drawer, Grading, LabelSelect, Input, Confirm, Link, Tab} from 'react-native-ui-xg';
 ```
 
 ## Components
@@ -24,6 +24,7 @@ import {Button, DatePicker, Drawer, Grading, LabelSelect} from 'react-native-ui-
 * [Input](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Input/README.md)
 * [Confirm](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Confirm/README.md)
 * [Link](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Link/README.md)
+* [Tab](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Tab/README.md)
 * [StyleSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/StyleSheet/README.md)
 
 ## Example

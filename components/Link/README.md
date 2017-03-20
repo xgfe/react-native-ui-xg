@@ -1,4 +1,4 @@
-### The react-native-Link-xg
+### The react-native-link-xg
 * react native Link component for both Android and iOS based on pure JavaScript
 
 ### Main

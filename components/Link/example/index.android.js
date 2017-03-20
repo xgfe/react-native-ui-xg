@@ -18,7 +18,7 @@ class Banna extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <Link label='必填项' required
+        <Link label="必填项" required
         onPress={() => {
           this.props.navigator.push({
             key: '必填项'

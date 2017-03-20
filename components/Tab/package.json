@@ -1,0 +1,25 @@
+{
+  "name": "react-native-tab-xg",
+  "version": "0.0.1",
+  "description": "react native tab component for both Android and IOS, useing pure JavaScript",
+  "main": "Tab.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "tabs",
+    "tab",
+    "react-native-tab"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg/components/Tab#readme",
+  "dependencies": {
+    "react-native-stylesheet-xg": "^1.1.0"
+  }
+}

@@ -22,7 +22,8 @@
     "react-native-stylesheet-xg": "^1.1.0",
     "react-native-input-xg": "^0.0.2",
     "react-native-confirm": "^0.0.1",
-    "react-native-link-xg": "^0.0.1"
+    "react-native-link-xg": "^0.0.1",
+    "react-native-tab-xg": "^0.0.1"
   },
   "devDependencies": {
     "babel-jest": "18.0.0",
