@@ -1,0 +1,24 @@
+{
+  "name": "react-native-link-xg",
+  "version": "0.0.1",
+  "description": "react native link component for both Android and IOS, using pure JavaScript",
+  "main": "Link.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "link",
+    "react-native-link"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg/components/Link#readme",
+  "dependencies": {
+    "react-native-stylesheet-xg": "^1.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+example/
+__tests__/
+.*
+components/
+coverage/
+index.android.js
+index.ios.js
+android/
+ios/

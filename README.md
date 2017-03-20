@@ -23,6 +23,7 @@ import {Button, DatePicker, Drawer, Grading, LabelSelect} from 'react-native-ui-
 * [Button](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Button/README.md)
 * [Input](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Input/README.md)
 * [Confirm](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Confirm/README.md)
+* [Link](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Link/README.md)
 * [StyleSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/StyleSheet/README.md)
 
 ## Example

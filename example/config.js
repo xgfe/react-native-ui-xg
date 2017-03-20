@@ -8,6 +8,7 @@ import Grading from '../components/Grading/example';
 import Button from '../components/Button/example';
 import Input from '../components/Input/example';
 import Confirm from '../components/Confirm/example';
+import Link from '../components/Link/example';
 
 const listData = {
   // #list#
@@ -17,7 +18,8 @@ const listData = {
   LabelSelect,
   Button,
   Input,
-  Confirm
+  Confirm,
+  Link
 };
 
 export default listData;
