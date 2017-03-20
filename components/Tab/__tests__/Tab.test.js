@@ -40,7 +40,7 @@ describe('test props', () => {
     };
     function change() {
       temp = !temp;
-    };
+    }
     const itemList = [
       {
         key: 'workspace',
@@ -75,7 +75,7 @@ describe('test props', () => {
     ];
     const wrapper1 = shallow(
      <Tab
-      active='workspace'
+      active="workspace"
       itemList={itemList}
       />);
     expect(wrapper1.find(TouchableWithoutFeedback).length).toEqual(3);

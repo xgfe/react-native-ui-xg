@@ -2,6 +2,8 @@
 
 A suit of cross platform React Native ui kit.
 
+![image](https://raw.githubusercontent.com/lulutia/images/master/react-native-components/Screen-Capture-44.gif)
+
 ## Install
 
 ```bash
@@ -10,8 +12,23 @@ npm install react-native-ui-xg --save
 
 ## Usage
 
+### for the whole 
 ```js
 import {Button, DatePicker, Drawer, Grading, LabelSelect, Input, Confirm, Link, Tab} from 'react-native-ui-xg';
+```
+### for one by one
+
+```bash
+npm install react-native-datepicker --save
+npm install react-native-grading --save
+npm install react-native-label-select --save
+npm install react-native-drawer-menu --save
+npm install react-native-buttons --save
+npm install react-native-input-xg --save
+npm install react-native-confirm --save
+npm install react-native-link-xg --save
+npm install react-native-tab-xg --save
+
 ```
 
 ## Components
