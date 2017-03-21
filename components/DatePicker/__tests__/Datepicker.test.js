@@ -318,7 +318,7 @@ describe('DatePicker', () => {
 
   it('`date` prop changes', () => {
     const wrapper = mount(<DatePicker date="2016-06-04" />);
-    
+
     expect(wrapper.state('date')).toMatchObject(new Date(2016, 5, 4));
 
     wrapper.setProps({date: '2016-06-05'});
