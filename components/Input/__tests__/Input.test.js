@@ -14,6 +14,8 @@ import renderer from 'react-test-renderer';
 import {shallow, mount} from 'enzyme';
 import Input from '../Input';
 
+console.error = function () {};
+
 describe('test render snapshot', () => {
   const tree = renderer.create(
   	<Input />

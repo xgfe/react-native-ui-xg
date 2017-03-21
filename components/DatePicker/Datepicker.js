@@ -20,7 +20,7 @@ const FORMATS = {
   'time': 'HH:mm'
 };
 
-const SUPPORTED_ORIENTATIONS = ['portrait', 'portrait-upside-down', 'landscape', 'landscape-left', 'landscape-right'];
+const SUPPORTED_ORIENTATIONS = ["portrait", "portrait-upside-down", "landscape", "landscape-left", "landscape-right"];
 
 class DatePicker extends Component {
   constructor(props) {
@@ -49,6 +49,12 @@ class DatePicker extends Component {
       'Warning: Failed propType'
       // Other warnings you don't want like 'jsSchedulingOverhead',
     ];
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.date !== this.props.date) {
+      this.setState({date: this.getDate(nextProps.date)});
+    }
   }
 
   setModalVisible(visible) {

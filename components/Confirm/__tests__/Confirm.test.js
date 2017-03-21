@@ -12,7 +12,7 @@ import Confirm from '../Confirm';
 import Button from 'react-native-buttons';
 import Input from 'react-native-input-xg';
 
-
+console.error = function () {};
 
 describe('test node', () => {
   it('check node number', () => {

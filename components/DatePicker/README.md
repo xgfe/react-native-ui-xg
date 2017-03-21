@@ -1,5 +1,5 @@
 # react-native-datepicker
-react native datePicker component for both Android and IOS, useing DatePikcerAndroid, TimePickerAndroid and DatePickerIOS
+react native datePicker component for both Android and IOS, using DatePikcerAndroid, TimePickerAndroid and DatePickerIOS
 
 ## Install
 
