@@ -1,6 +1,7 @@
 // !important: Don't modify this file manually.
 
 // #anchor#
+import ZoomImage from '../components/ZoomImage/example';
 import DatePicker from '../components/DatePicker/example';
 import Drawer from '../components/Drawer/example';
 import LabelSelect from '../components/LabelSelect/example';
@@ -13,6 +14,7 @@ import Tab from '../components/Tab/example';
 
 const listData = {
   // #list#
+  ZoomImage,
   DatePicker,
   Drawer,
   Grading,
