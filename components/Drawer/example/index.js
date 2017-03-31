@@ -20,10 +20,10 @@ export default class DrawerExample extends Component {
           <Text>Drag / click the left side to close drawer.</Text>
           <Text>Or click the button bellow.</Text>
           <TouchableHighlight
-            style={styles.btn}
-            underlayColor="#c33d19"
+            style={[styles.btn, styles.closeBtn]}
+            underlayColor="#0d9ebe"
             onPress={() => {this.drawer && this.drawer.closeDrawer();}}>
-            <Text style={styles.btnText}>Open Drawer</Text>
+            <Text style={styles.btnText}>Close Drawer</Text>
           </TouchableHighlight>
         </View>
       </View>
@@ -67,6 +67,9 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     borderRadius: 5,
     backgroundColor: '#f06355'
+  },
+  closeBtn: {
+    backgroundColor: '#13c9e9'
   },
   btnText: {
     fontSize: 14,
