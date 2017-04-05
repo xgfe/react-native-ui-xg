@@ -43,7 +43,8 @@ export default StyleSheet.create({
   labelText: {
     padding: 6,
     fontSize: 14,
-    lineHeight: 14
+    lineHeight: 14,
+    maxWidth: 300
   },
   closeContainer: {
     padding: 8,
@@ -110,7 +111,8 @@ export default StyleSheet.create({
     borderBottomColor: '#bbb'
   },
   modalText: {
-    fontSize: 16
+    fontSize: 16,
+    width: width * 0.6 - 70
   },
   buttonText: {
     color: '#fff',

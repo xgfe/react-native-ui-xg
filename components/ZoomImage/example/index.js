@@ -7,11 +7,11 @@ import {
   StyleSheet,
   View,
   Text,
+  Easing,
   ScrollView
 } from 'react-native';
 
 import ZoomImage from '../index';
-
 
 export default class ZoomImageExample extends Component {
   constructor(props) {
@@ -37,6 +37,7 @@ export default class ZoomImageExample extends Component {
               source={{uri: 'https://ooo.0o0.ooo/2017/03/31/58de0e9b287f6.jpg'}}
               imgStyle={{width: 250, height: 230}}
               style={styles.img}
+              enableScaling={true}
               />
           </View>
 
@@ -45,6 +46,7 @@ export default class ZoomImageExample extends Component {
               source={{uri: 'https://ooo.0o0.ooo/2017/03/31/58de0e9b28328.jpg'}}
               imgStyle={{width: 250, height: 240}}
               style={styles.img}
+              easingFunc={Easing.bounce}
               />
           </View>
 

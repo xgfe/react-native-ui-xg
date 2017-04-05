@@ -165,7 +165,8 @@ class Label extends Component {
     const {enable, readOnly, onCancel} = this.props;
     return (
       <View style={[Styles.selectedItem, !enable && Styles.disableColor]}>
-        <Text style={[Styles.labelText, !enable && Styles.disableText]}>{this.props.children}</Text>
+        <Text style={[Styles.labelText, !enable && Styles.disableText]}
+          numberOfLines={1} ellipsisMode="tail">{this.props.children}</Text>
         {enable && !readOnly && <TouchableHighlight
           style={Styles.closeContainer}
           underlayColor="transparent"
@@ -205,7 +206,7 @@ class ModalItem extends Component {
         underlayColor="transparent"
         onPress={this._toggleSelect}>
         <View style={Styles.modalItem}>
-          <Text style={Styles.modalText}>{this.props.children}</Text>
+          <Text style={Styles.modalText} numberOfLines={1} ellipsisMode="tail">{this.props.children}</Text>
             <View style={[Styles.outerCircle, this.isSelected ? Styles.enableCircle : {}]}>
               {this.isSelected && <View style={Styles.innerCircle}/>}
             </View>

@@ -5,7 +5,6 @@
 import React, {PropTypes, Component} from 'react';
 import {
   View,
-  Text,
   Image,
   Modal,
   Easing,
@@ -97,7 +96,9 @@ class ZoomImage extends Component {
             size={this.state.maxSize}
             minAlpha={this.props.minAlpha}
             source={this.props.source}
-            duration={this.props.duration}/>
+            duration={this.props.duration}
+            easingFunc={this.props.easingFunc}
+            enableScaling={this.props.enableScaling}/>
         </View>
       </TouchableWithoutFeedback>
     );
