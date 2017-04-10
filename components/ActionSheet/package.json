@@ -1,0 +1,27 @@
+{
+  "name": "react-native-action-sheet-xg",
+  "version": "0.0.1",
+  "description": "react native ActionSheet component for both Android and IOS, useing pure JavaScript",
+  "main": "Tab.js",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "xgfe",
+    "actionSheet",
+    "react-native-actionSheet",
+    "react-native-action-sheet"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg#readme",
+  "dependencies": {
+    "react-native-stylesheet-xg": "^1.1.0"
+  }
+}

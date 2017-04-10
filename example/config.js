@@ -3,6 +3,7 @@
 // #anchor#
 import PressMenu from '../components/PressMenu/example';
 import ZoomImage from '../components/ZoomImage/example';
+import ActionSheet from '../components/ActionSheet/example';
 import DatePicker from '../components/DatePicker/example';
 import Drawer from '../components/Drawer/example';
 import LabelSelect from '../components/LabelSelect/example';
@@ -17,6 +18,7 @@ const listData = {
   // #list#
   PressMenu,
   ZoomImage,
+  ActionSheet,
   DatePicker,
   Drawer,
   Grading,
