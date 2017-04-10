@@ -25,7 +25,8 @@ import {
   PressMenu,
   DrawerMenu,
   DatePicker,
-  LabelSelect
+  ActionSheet,
+  LabelSelect,
 } from 'react-native-ui-xg';
 ```
 ### for one by one
@@ -43,6 +44,7 @@ npm install react-native-datepicker --save
 npm install react-native-drawer-menu --save
 npm install react-native-presss-menu --save
 npm install react-native-label-select --save
+npm install react-native-action-sheet-xg --save
 
 ```
 
@@ -59,6 +61,7 @@ npm install react-native-label-select --save
 * [StyleSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/StyleSheet/README.md)
 * [DrawerMenu](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Drawer/README.md)
 * [LabelSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/LabelSelect/README.md)
+* [ActionSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/ActionSheet/README.md)
 
 ## Example
 
