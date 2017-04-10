@@ -1,6 +1,7 @@
 // !important: Don't modify this file manually.
 
 // #anchor#
+import PressMenu from '../components/PressMenu/example';
 import ZoomImage from '../components/ZoomImage/example';
 import DatePicker from '../components/DatePicker/example';
 import Drawer from '../components/Drawer/example';
@@ -14,6 +15,7 @@ import Tab from '../components/Tab/example';
 
 const listData = {
   // #list#
+  PressMenu,
   ZoomImage,
   DatePicker,
   Drawer,

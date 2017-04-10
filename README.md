@@ -12,37 +12,53 @@ npm install react-native-ui-xg --save
 
 ## Usage
 
-### for the whole 
+### for the whole
 ```js
-import {Button, DatePicker, Drawer, Grading, LabelSelect, Input, Confirm, Link, Tab} from 'react-native-ui-xg';
+import {
+  Tab,
+  Link,
+  Input,
+  Button,
+  Grading,
+  Confirm,
+  ZoomImage,
+  PressMenu,
+  DrawerMenu,
+  DatePicker,
+  LabelSelect
+} from 'react-native-ui-xg';
 ```
 ### for one by one
 
 ```bash
-npm install react-native-datepicker --save
-npm install react-native-grading --save
-npm install react-native-label-select --save
-npm install react-native-drawer-menu --save
-npm install react-native-buttons --save
-npm install react-native-input-xg --save
-npm install react-native-confirm --save
-npm install react-native-link-xg --save
+
 npm install react-native-tab-xg --save
+npm install react-native-link-xg --save
+npm install react-native-buttons --save
+npm install react-native-grading --save
+npm install react-native-confirm --save
+npm install react-native-input-xg --save
+npm install react-native-zoom-image --save
+npm install react-native-datepicker --save
+npm install react-native-drawer-menu --save
+npm install react-native-presss-menu --save
+npm install react-native-label-select --save
 
 ```
 
 ## Components
 
-* [DatePicker](https://github.com/xgfe/react-native-ui-xg/tree/master/components/DatePicker)
-* [Drawer](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Drawer/README.md)
-* [Grading](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Grading/README.md)
-* [LabelSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/LabelSelect/README.md)
-* [Button](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Button/README.md)
-* [Input](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Input/README.md)
-* [Confirm](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Confirm/README.md)
-* [Link](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Link/README.md)
 * [Tab](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Tab/README.md)
+* [Link](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Link/README.md)
+* [Input](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Input/README.md)
+* [Button](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Button/README.md)
+* [Grading](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Grading/README.md)
+* [Confirm](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Confirm/README.md)
+* [ZoomImage](https://github.com/xgfe/react-native-ui-xg/blob/master/components/ZoomImage/README.md)
+* [DatePicker](https://github.com/xgfe/react-native-ui-xg/tree/master/components/DatePicker)
 * [StyleSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/StyleSheet/README.md)
+* [DrawerMenu](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Drawer/README.md)
+* [LabelSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/LabelSelect/README.md)
 
 ## Example
 

@@ -1,0 +1,20 @@
+{
+  "name": "react-native-press-menu",
+  "version": "0.0.1",
+  "description": "a component reacts to user's long press action and offers a customizable menu. (like pinterest)",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "xgfe"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg#readme"
+}
