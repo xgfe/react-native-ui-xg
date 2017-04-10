@@ -13,7 +13,7 @@ import PressMenu from '../index';
 export default class PressMenuExample extends Component {
   render() {
     return (
-      <PressMenu style={styles.example}></PressMenu>
+      <PressMenu style={styles.example} />
     );
   }
 }

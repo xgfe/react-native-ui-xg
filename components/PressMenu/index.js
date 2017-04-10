@@ -21,7 +21,7 @@ export default class PressMenu extends Component {
   componentDidMount() {
   }
   render() {
-    return <View style={styles.container}/>
+    return <View style={styles.container}/>;
   }
 }
 
