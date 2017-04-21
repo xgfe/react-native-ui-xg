@@ -1,6 +1,6 @@
 {
   "name": "react-native-ui-xg",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A suit of react native ui.",
   "main": "index.js",
   "private": false,
@@ -24,6 +24,7 @@
     "react-native-confirm": "^0.0.1",
     "react-native-link-xg": "^0.0.1",
     "react-native-tab-xg": "^0.0.1",
+    "react-native-accordion-xg": "^0.0.1",
     "react-native-action-sheet-xg": "^0.0.1"
   },
   "devDependencies": {

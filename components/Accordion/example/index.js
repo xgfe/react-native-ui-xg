@@ -13,15 +13,15 @@ import Accordion from '../Accordion';
 
 const items = [
   {
-    name: "HOME",
+    name: 'HOME',
     description: "Gone with the Wind is a 1939 American epic historical romance film adapted from Margaret Mitchell's 1936 novel Gone with the Wind. It was produced by David O. Selznick of Selznick International Pictures and directed by Victor Fleming."
   },
   {
-    name: "PRODUCT",
+    name: 'PRODUCT',
     description: "The Godfather is a 1972 American crime film directed by Francis Ford Coppola and produced by Albert S. Ruddy, based on Mario Puzo's best-selling novel of the same name."
   },
   {
-    name: "SETTINGS",
+    name: 'SETTINGS',
     description: 'just for test'
   }
 ];
