@@ -1,0 +1,22 @@
+{
+  "name": "react-native-accordion-xg",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./Accordion.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgfe/react-native-ui-xg.git"
+  },
+  "keywords": [
+    "react-native",
+    "xgfe",
+    "react-native-accordion",
+    "accordion"
+  ],
+  "author": "xgfe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgfe/react-native-ui-xg/issues"
+  },
+  "homepage": "https://github.com/xgfe/react-native-ui-xg#readme"
+}

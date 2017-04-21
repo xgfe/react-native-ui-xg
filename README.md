@@ -21,6 +21,7 @@ import {
   Button,
   Grading,
   Confirm,
+  Accordion,
   ZoomImage,
   PressMenu,
   DrawerMenu,
@@ -44,6 +45,7 @@ npm install react-native-datepicker --save
 npm install react-native-drawer-menu --save
 npm install react-native-presss-menu --save
 npm install react-native-label-select --save
+npm install react-native-accordion-xg --save
 npm install react-native-action-sheet-xg --save
 
 ```
@@ -56,6 +58,7 @@ npm install react-native-action-sheet-xg --save
 * [Button](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Button/README.md)
 * [Grading](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Grading/README.md)
 * [Confirm](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Confirm/README.md)
+* [Accordion](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Accordion/README.md)
 * [ZoomImage](https://github.com/xgfe/react-native-ui-xg/blob/master/components/ZoomImage/README.md)
 * [DatePicker](https://github.com/xgfe/react-native-ui-xg/tree/master/components/DatePicker)
 * [StyleSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/StyleSheet/README.md)
