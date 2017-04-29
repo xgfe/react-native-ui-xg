@@ -11,7 +11,9 @@
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
     "check": "node ./tools/checkGit",
-    "new": "node ./tools/new"
+    "new": "node ./tools/new",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android"
   },
   "dependencies": {
     "react-native-datepicker": "^1.4.4",
