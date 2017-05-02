@@ -5,7 +5,6 @@
 import React, {PropTypes, Component} from 'react';
 import {
   View,
-  Text,
   Modal,
   StyleSheet,
   PanResponder

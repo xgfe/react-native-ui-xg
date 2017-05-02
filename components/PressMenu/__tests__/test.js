@@ -3,7 +3,7 @@
  */
 
  /* eslint-disable */
- 
+
 import {
   View
 } from 'react-native';
@@ -13,5 +13,9 @@ import renderer from 'react-test-renderer';
 
 import PressMenu from '../index';
 
+let tree = shallow(<PressMenu/>);
+
 it('PressMenu renders correctly', () => {
+  let instance = tree.instance();
+  expect(instance.longPressTimeout).toEqual(null);
 });

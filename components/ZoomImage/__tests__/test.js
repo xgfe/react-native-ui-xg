@@ -11,7 +11,7 @@ import React from 'react';
 import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import ZoomImage from '../ZoomImage';
+import ZoomImage from '../index';
 import Animation from '../Animation';
 
 let {width, height, scale} = Dimensions.get('window');
