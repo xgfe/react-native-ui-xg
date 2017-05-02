@@ -25,7 +25,7 @@ import LabelSelect from 'react-native-label-select';
   style={yourStyle}
   onConfirm={(list) => {...}}>
 
-  <LableSelect.Label
+  <LabelSelect.Label
     key={...}
     data={itemA}
     onCancel={func}>selected ItemA</LabelSelect.Label>
@@ -79,7 +79,7 @@ import LabelSelect from 'react-native-label-select';
 Use `ref` property as a hook to invoke internal methods.
 
 ```html
-<LabelSelect ref="select">...</LableSelect>
+<LabelSelect ref="select">...</LabelSelect>
 ```
 
 ```js

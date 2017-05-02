@@ -24,17 +24,23 @@ const RCTUIManager = NativeModules.UIManager;
 
 class ZoomImage extends Component {
   static propTypes = {
+    disabled: PropTypes.bool,
     startCapture: PropTypes.bool,
     moveCapture: PropTypes.bool,
     responderNegotiate: PropTypes.func,
     easingFunc: PropTypes.func,
-    duration: PropTypes.number,
+    rebounceDuration: PropTypes.number,
+    closeDuration: PropTypes.number,
+    showDuration: PropTypes.number,
     enableScaling: PropTypes.bool
   }
   static defaultProps = {
+    disabled: false,
     startCapture: false,
     moveCapture: false,
-    duration: 800,
+    rebounceDuration: 800,
+    closeDuration: 140,
+    showDuration: 100,
     easingFunc: Easing.ease,
     enableScaling: false
   }
@@ -50,23 +56,32 @@ class ZoomImage extends Component {
     this.enableModal = false;
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
-    Image.getSize(this.props.source.uri, (w, h) => {
-      let ratio = w / h;
+    this.modalRefBind = this.modalRefBind.bind(this);
+    this.getMaxSizeByRatio = this.getMaxSizeByRatio.bind(this);
+  }
+  getMaxSizeByRatio (ratio) {
+    return {
+      width: ratio >= winRatio ? winWidth : winWidth / ratio,
+      height: ratio >= winRatio ? winWidth / ratio : winHeight
+    };
+  }
+  componentDidMount () {
+    if (this.props.source.uri) {
+      Image.getSize(this.props.source.uri, (w, h) => {
+        this.setState((state) => {
+          state.maxSize = this.getMaxSizeByRatio(w / h);
+          this.enableModal = true;
+        });
+      });
+    } else {
       this.setState((state) => {
-        state.maxSize = {
-          width: ratio >= winRatio ? winWidth : winWidth / ratio,
-          height: ratio >= winRatio ? winWidth / ratio : winHeight
-        };
+        state.maxSize = this.getMaxSizeByRatio(this.props.imgStyle.width / this.props.imgStyle.height);
         this.enableModal = true;
       });
-    });
+    }
   }
-  componentWillMount() {
-  }
-  componentDidMount() {
-  }
-  openModal() {
-    if (!this.refs.view || !this.enableModal) return;
+  openModal () {
+    if (!this.refs.view || !this.enableModal || this.props.disabled) return;
     RCTUIManager.measure(findNodeHandle(this.refs.view), (x, y, w, h, px, py) => {
       this.originPosition = {x, y, w, h, px, py};
     });
@@ -74,12 +89,16 @@ class ZoomImage extends Component {
       isModalVisible: true
     });
   }
-  closeModal() {
+  closeModal () {
+    if (this.props.disabled) return;
     this.setState({
       isModalVisible: false
     });
   }
-  render() {
+  modalRefBind (modal) {
+    this._modal = modal;
+  }
+  render () {
     return (
       <TouchableWithoutFeedback style={this.props.imgStyle}
         onPress={this.openModal}
@@ -90,15 +109,20 @@ class ZoomImage extends Component {
             resizeMode={this.props.resizeMode}
             style={this.props.imgStyle}/>
           <ImageModal
+            ref={this.modalRefBind}
+            disabled={this.props.disabled}
             visible={this.state.isModalVisible}
             onClose={this.closeModal}
             originPosition={this.originPosition}
             size={this.state.maxSize}
             minAlpha={this.props.minAlpha}
             source={this.props.source}
-            duration={this.props.duration}
+            rebounceDuration={this.props.rebounceDuration}
+            closeDuration={this.props.closeDuration}
+            showDuration={this.props.showDuration}
             easingFunc={this.props.easingFunc}
-            enableScaling={this.props.enableScaling}/>
+            enableScaling={this.props.enableScaling}
+          />
         </View>
       </TouchableWithoutFeedback>
     );
@@ -150,12 +174,12 @@ class ImageModal extends Component {
   _onStartShouldSetPanResponder (evt, gestureState) {
     // set responder for tapping when the drawer is open
     // TODO: tap close
-    if (this._inAnimation) return;
+    if (this._inAnimation || this.props.disabled) return;
     return false;
   }
   _onMoveShouldSetPanResponder (evt, gestureState) {
     // custom pan responder condition function
-    if (this._inAnimation) return;
+    if (this._inAnimation || this.props.disabled) return;
     if (this.props.responderNegotiate && this.props.responderNegotiate(evt, gestureState) === false) return false;
     if (this._touchPositionCheck(gestureState)) {
       return true;
@@ -186,13 +210,13 @@ class ImageModal extends Component {
     return true;
   }
   _closeModal(isDown) {
-    const {easingFunc, onClose} = this.props;
+    const {easingFunc, onClose, closeDuration} = this.props;
     let current = this._contentStyle.style.top;
     this._inAnimation = true;
     new Animation({
       start: current,
       end: isDown ? winHeight : -winHeight,
-      duration: 140,
+      duration: closeDuration,
       easingFunc,
       onAnimationFrame: (val) => {
         this._updateNativeStyles(val);
@@ -211,13 +235,13 @@ class ImageModal extends Component {
     this._closeModal(true);
   }
   _rebounce(isDown) {
-    const {duration, easingFunc} = this.props;
+    const {rebounceDuration, easingFunc} = this.props;
     let current = this._contentStyle.style.top;
     this._inAnimation = true;
     new Animation({
       start: current,
       end: 0,
-      duration: Math.abs(current / winHeight) * duration,
+      duration: Math.abs(current / winHeight) * rebounceDuration,
       easingFunc,
       onAnimationFrame: (val) => {
         this._updateNativeStyles(val);
@@ -260,7 +284,7 @@ class ImageModal extends Component {
     new Animation({
       start: 0,
       end: 1,
-      duration: 100,
+      duration: this.props.showDuration,
       easingFunc: Easing.ease,
       onAnimationFrame: (val) => {
         this.mask && this.mask.setNativeProps({style: {
@@ -330,8 +354,6 @@ const styles = StyleSheet.create({
   },
   modalText: {
     color: '#fff'
-  },
-  img: {
   }
 });
 
