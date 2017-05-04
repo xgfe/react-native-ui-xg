@@ -2,8 +2,9 @@
 LabelSelect is a component used for making multiple choices. The modal is a checkbox like html.
 
 ## Example
+<a href="#android" id="android"><img src="http://7xjgb0.com1.z0.glb.clouddn.com/android.gif" align="left" width="240"/></a>
 
-See at [github page](https://github.com/Tinysymphony/react-native-label-select#readme)
+<a href="#ios" id="ios"><img src="http://7xjgb0.com1.z0.glb.clouddn.com/ios.gif" width="240"/></a>
 
 ## Usage
 
@@ -48,7 +49,9 @@ import LabelSelect from 'react-native-label-select';
 | enable | true | bool | is the component interactive  |
 | enableAddBtn | true | bool | whether to show the add button |
 | onConfirm | - | function | Triggered when the confirm button of modal is pressed with the newly selected items list passed as the only argument |
-
+| confirmText | - | string | Text of confirm button. |
+| cancelText | - | string | Text of cancelText button. |
+| customStyle | - | object | You can customize styles of `modal` / `buttonView` / `confirmButton` / `confirmText` / `cancelButton` / `cancelText` by `customStyle. |
 
 **LabelSelect.Label**
 
@@ -56,7 +59,8 @@ import LabelSelect from 'react-native-label-select';
 | Prop | Default | Type | Description |
 | --- | --- | --- | --- |
 | onCancel | - | function | Triggered when the close button of Label is pressed. |
-|data| -| any | Data that bind to the Label |
+| data | - | any | Data that bind to the Label |
+| customStyle | - | object | You can customize styles of `text` by `customStyle. |
 
 **LabelSelect.ModalItem**
 
@@ -75,6 +79,7 @@ import LabelSelect from 'react-native-label-select';
 | --- | --- | --- |
 | openModal | - | Open select modal |
 | cancelSelect | - | Close select modal. Also triggered when the cancel button of modal being pressed. |
+| customStyle | - | object | You can customize styles of `modalText` / `outerCircle` / `innerCircle` by `customStyle. |
 
 Use `ref` property as a hook to invoke internal methods.
 

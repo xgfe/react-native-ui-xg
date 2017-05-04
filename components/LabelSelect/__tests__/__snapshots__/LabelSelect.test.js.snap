@@ -64,6 +64,7 @@ exports[`test renders a modal item 1`] = `
             "width": 20,
           },
           Object {},
+          Object {},
         ]
       } />
   </View>
@@ -119,6 +120,7 @@ exports[`test renders disabled LabelSelect 1`] = `
           Object {
             "color": "#999",
           },
+          Object {},
         ]
       }>
       A
@@ -160,6 +162,7 @@ exports[`test renders disabled LabelSelect 1`] = `
           Object {
             "color": "#999",
           },
+          Object {},
         ]
       }>
       B
@@ -210,13 +213,16 @@ exports[`test renders disabled LabelSelect 1`] = `
           style={Object {}}>
           <View
             style={
-              Object {
-                "backgroundColor": "#fff",
-                "borderRadius": 10,
-                "height": 800.4,
-                "overflow": "hidden",
-                "width": 450,
-              }
+              Array [
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderRadius": 10,
+                  "height": 800.4,
+                  "overflow": "hidden",
+                  "width": 450,
+                },
+                Object {},
+              ]
             }>
             <View
               style={
@@ -252,14 +258,15 @@ exports[`test renders disabled LabelSelect 1`] = `
             </View>
             <View
               style={
-                Object {
-                  "backgroundColor": "#40cca2",
-                  "borderBottomLeftRadius": 10,
-                  "borderBottomRightRadius": 10,
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-around",
-                }
+                Array [
+                  Object {
+                    "borderBottomLeftRadius": 10,
+                    "borderBottomRightRadius": 10,
+                    "flexDirection": "row",
+                    "justifyContent": "space-around",
+                  },
+                  Object {},
+                ]
               }>
               <View
                 accessibilityComponentType={undefined}
@@ -281,29 +288,42 @@ exports[`test renders disabled LabelSelect 1`] = `
                     Object {
                       "backgroundColor": "transparent",
                     },
-                    Object {
-                      "alignItems": "center",
-                      "justifyContent": "center",
-                      "paddingLeft": 20,
-                      "paddingRight": 20,
-                      "width": 225,
-                    },
+                    undefined,
                   ]
                 }
                 testID={undefined}
                 tvParallaxProperties={undefined}>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <View
                   style={
-                    Object {
-                      "color": "#fff",
-                      "fontSize": 16,
-                    }
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#40cca2",
+                        "height": 40,
+                        "justifyContent": "center",
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "width": 225,
+                      },
+                      Object {},
+                    ]
                   }>
-                  Cancel
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ]
+                    }>
+                    Cancel
+                  </Text>
+                </View>
               </View>
               <View
                 accessibilityComponentType={undefined}
@@ -325,9 +345,18 @@ exports[`test renders disabled LabelSelect 1`] = `
                     Object {
                       "backgroundColor": "transparent",
                     },
+                    undefined,
+                  ]
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}>
+                <View
+                  style={
                     Array [
                       Object {
                         "alignItems": "center",
+                        "backgroundColor": "#40cca2",
+                        "height": 40,
                         "justifyContent": "center",
                         "paddingLeft": 20,
                         "paddingRight": 20,
@@ -337,23 +366,25 @@ exports[`test renders disabled LabelSelect 1`] = `
                         "borderLeftColor": "#fff",
                         "borderLeftWidth": 1,
                       },
-                    ],
-                  ]
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#fff",
-                      "fontSize": 16,
-                    }
+                      Object {},
+                    ]
                   }>
-                  Confirm
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ]
+                    }>
+                    Confirm
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -409,6 +440,7 @@ exports[`test renders enabled LabelSelect 1`] = `
             "padding": 6,
           },
           false,
+          Object {},
         ]
       }>
       A
@@ -491,6 +523,7 @@ exports[`test renders enabled LabelSelect 1`] = `
             "padding": 6,
           },
           false,
+          Object {},
         ]
       }>
       B
@@ -640,13 +673,16 @@ exports[`test renders enabled LabelSelect 1`] = `
           style={Object {}}>
           <View
             style={
-              Object {
-                "backgroundColor": "#fff",
-                "borderRadius": 10,
-                "height": 800.4,
-                "overflow": "hidden",
-                "width": 450,
-              }
+              Array [
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderRadius": 10,
+                  "height": 800.4,
+                  "overflow": "hidden",
+                  "width": 450,
+                },
+                Object {},
+              ]
             }>
             <View
               style={
@@ -682,14 +718,15 @@ exports[`test renders enabled LabelSelect 1`] = `
             </View>
             <View
               style={
-                Object {
-                  "backgroundColor": "#40cca2",
-                  "borderBottomLeftRadius": 10,
-                  "borderBottomRightRadius": 10,
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-around",
-                }
+                Array [
+                  Object {
+                    "borderBottomLeftRadius": 10,
+                    "borderBottomRightRadius": 10,
+                    "flexDirection": "row",
+                    "justifyContent": "space-around",
+                  },
+                  Object {},
+                ]
               }>
               <View
                 accessibilityComponentType={undefined}
@@ -711,29 +748,42 @@ exports[`test renders enabled LabelSelect 1`] = `
                     Object {
                       "backgroundColor": "transparent",
                     },
-                    Object {
-                      "alignItems": "center",
-                      "justifyContent": "center",
-                      "paddingLeft": 20,
-                      "paddingRight": 20,
-                      "width": 225,
-                    },
+                    undefined,
                   ]
                 }
                 testID={undefined}
                 tvParallaxProperties={undefined}>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <View
                   style={
-                    Object {
-                      "color": "#fff",
-                      "fontSize": 16,
-                    }
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#40cca2",
+                        "height": 40,
+                        "justifyContent": "center",
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "width": 225,
+                      },
+                      Object {},
+                    ]
                   }>
-                  Cancel
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ]
+                    }>
+                    Cancel
+                  </Text>
+                </View>
               </View>
               <View
                 accessibilityComponentType={undefined}
@@ -755,9 +805,18 @@ exports[`test renders enabled LabelSelect 1`] = `
                     Object {
                       "backgroundColor": "transparent",
                     },
+                    undefined,
+                  ]
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}>
+                <View
+                  style={
                     Array [
                       Object {
                         "alignItems": "center",
+                        "backgroundColor": "#40cca2",
+                        "height": 40,
                         "justifyContent": "center",
                         "paddingLeft": 20,
                         "paddingRight": 20,
@@ -767,23 +826,25 @@ exports[`test renders enabled LabelSelect 1`] = `
                         "borderLeftColor": "#fff",
                         "borderLeftWidth": 1,
                       },
-                    ],
-                  ]
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#fff",
-                      "fontSize": 16,
-                    }
+                      Object {},
+                    ]
                   }>
-                  Confirm
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ]
+                    }>
+                    Confirm
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -839,6 +900,7 @@ exports[`test renders readOnly LabelSelect 1`] = `
             "padding": 6,
           },
           false,
+          Object {},
         ]
       }>
       A
@@ -876,6 +938,7 @@ exports[`test renders readOnly LabelSelect 1`] = `
             "padding": 6,
           },
           false,
+          Object {},
         ]
       }>
       B
@@ -926,13 +989,16 @@ exports[`test renders readOnly LabelSelect 1`] = `
           style={Object {}}>
           <View
             style={
-              Object {
-                "backgroundColor": "#fff",
-                "borderRadius": 10,
-                "height": 800.4,
-                "overflow": "hidden",
-                "width": 450,
-              }
+              Array [
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderRadius": 10,
+                  "height": 800.4,
+                  "overflow": "hidden",
+                  "width": 450,
+                },
+                Object {},
+              ]
             }>
             <View
               style={
@@ -968,14 +1034,15 @@ exports[`test renders readOnly LabelSelect 1`] = `
             </View>
             <View
               style={
-                Object {
-                  "backgroundColor": "#40cca2",
-                  "borderBottomLeftRadius": 10,
-                  "borderBottomRightRadius": 10,
-                  "flexDirection": "row",
-                  "height": 40,
-                  "justifyContent": "space-around",
-                }
+                Array [
+                  Object {
+                    "borderBottomLeftRadius": 10,
+                    "borderBottomRightRadius": 10,
+                    "flexDirection": "row",
+                    "justifyContent": "space-around",
+                  },
+                  Object {},
+                ]
               }>
               <View
                 accessibilityComponentType={undefined}
@@ -997,29 +1064,42 @@ exports[`test renders readOnly LabelSelect 1`] = `
                     Object {
                       "backgroundColor": "transparent",
                     },
-                    Object {
-                      "alignItems": "center",
-                      "justifyContent": "center",
-                      "paddingLeft": 20,
-                      "paddingRight": 20,
-                      "width": 225,
-                    },
+                    undefined,
                   ]
                 }
                 testID={undefined}
                 tvParallaxProperties={undefined}>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <View
                   style={
-                    Object {
-                      "color": "#fff",
-                      "fontSize": 16,
-                    }
+                    Array [
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "#40cca2",
+                        "height": 40,
+                        "justifyContent": "center",
+                        "paddingLeft": 20,
+                        "paddingRight": 20,
+                        "width": 225,
+                      },
+                      Object {},
+                    ]
                   }>
-                  Cancel
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ]
+                    }>
+                    Cancel
+                  </Text>
+                </View>
               </View>
               <View
                 accessibilityComponentType={undefined}
@@ -1041,9 +1121,18 @@ exports[`test renders readOnly LabelSelect 1`] = `
                     Object {
                       "backgroundColor": "transparent",
                     },
+                    undefined,
+                  ]
+                }
+                testID={undefined}
+                tvParallaxProperties={undefined}>
+                <View
+                  style={
                     Array [
                       Object {
                         "alignItems": "center",
+                        "backgroundColor": "#40cca2",
+                        "height": 40,
                         "justifyContent": "center",
                         "paddingLeft": 20,
                         "paddingRight": 20,
@@ -1053,23 +1142,25 @@ exports[`test renders readOnly LabelSelect 1`] = `
                         "borderLeftColor": "#fff",
                         "borderLeftWidth": 1,
                       },
-                    ],
-                  ]
-                }
-                testID={undefined}
-                tvParallaxProperties={undefined}>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#fff",
-                      "fontSize": 16,
-                    }
+                      Object {},
+                    ]
                   }>
-                  Confirm
-                </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ]
+                    }>
+                    Confirm
+                  </Text>
+                </View>
               </View>
             </View>
           </View>

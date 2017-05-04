@@ -23,7 +23,6 @@ import {
   Confirm,
   Accordion,
   ZoomImage,
-  PressMenu,
   DrawerMenu,
   DatePicker,
   ActionSheet,
@@ -43,7 +42,6 @@ npm install react-native-input-xg --save
 npm install react-native-zoom-image --save
 npm install react-native-datepicker --save
 npm install react-native-drawer-menu --save
-npm install react-native-presss-menu --save
 npm install react-native-label-select --save
 npm install react-native-accordion-xg --save
 npm install react-native-action-sheet-xg --save

@@ -1,6 +1,6 @@
 {
   "name": "react-native-ui-xg",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A suit of react native ui.",
   "main": "index.js",
   "private": false,
@@ -19,7 +19,7 @@
     "react-native-datepicker": "^1.4.4",
     "react-native-drawer-menu": "^0.2.3",
     "react-native-grading": "^1.0.3",
-    "react-native-label-select": "^1.0.9",
+    "react-native-label-select": "^1.0.10",
     "react-native-zoom-image": "^0.1.1",
     "react-native-buttons": "^0.0.4",
     "react-native-stylesheet-xg": "^1.1.0",

@@ -5,7 +5,6 @@ export {default as DrawerMenu} from 'react-native-drawer-menu';
 export {default as Grading} from 'react-native-grading';
 export {default as LabelSelect} from 'react-native-label-select';
 export {default as ZoomImage} from 'react-native-zoom-image';
-export {default as PressMenu} from 'react-native-press-menu';
 export {default as Input} from 'react-native-input-xg';
 export {default as Confirm} from 'react-native-confirm';
 export {default as Link} from 'react-native-link-xg';

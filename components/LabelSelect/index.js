@@ -22,15 +22,20 @@ class LabelSelect extends Component {
     readOnly: PropTypes.bool,
     enable: PropTypes.bool,
     onConfirm: PropTypes.func,
-    enableAddBtn: PropTypes.bool
+    enableAddBtn: PropTypes.bool,
+    confirmText: PropTypes.string,
+    cancelText: PropTypes.string
   }
   static defaultProps = {
     style: {},
+    customStyle: {},
     title: ' ',
     enable: true,
     readOnly: false,
     onConfirm: () => {},
-    enableAddBtn: true
+    enableAddBtn: true,
+    confirmText: 'Confirm',
+    cancelText: 'Cancel'
   }
   constructor(props) {
     super(props);
@@ -69,7 +74,16 @@ class LabelSelect extends Component {
     else {this.selectedList.push(time);}
   }
   render() {
-    const {readOnly, enable, title, style, enableAddBtn} = this.props;
+    const {
+      readOnly,
+      enable,
+      title,
+      style,
+      enableAddBtn,
+      customStyle,
+      confirmText,
+      cancelText
+    } = this.props;
     let selectedLabels = React.Children.toArray(this.props.children)
       .filter(item => item.type === Label)
       .map((child, index) => {
@@ -94,7 +108,7 @@ class LabelSelect extends Component {
           <TouchableHighlight
             style={[Styles.selectedItem, Styles.addItem]}
             underlayColor="transparent"
-            onPress={() => {this.openModal();}}>
+            onPress={this.openModal}>
             <Image
               style={Styles.addIcon}
               source={this.addIcon}
@@ -113,25 +127,29 @@ class LabelSelect extends Component {
               underlayColor="#00000077"
               onPress={this.cancelSelect}>
               <View style={Styles.modalContainer}>
-                <View style={Styles.modal}>
+                <View style={[Styles.modal, customStyle.modal || {}]}>
                   <View style={Styles.title}><Text style={Styles.titleText}>{title}</Text></View>
                   <View style={Styles.scrollView}>
                     <ScrollView>
                       {modalItems}
                     </ScrollView>
                   </View>
-                  <View style={Styles.buttonView}>
+                  <View style={[Styles.buttonView, customStyle.buttonView || {}]}>
                     <TouchableHighlight
                       underlayColor="transparent"
-                      style={Styles.modalButton}
+                      activeOpacity={0.8}
                       onPress={this.cancelSelect}>
-                      <Text style={Styles.buttonText}>Cancel</Text>
+                      <View style={[Styles.modalButton, customStyle.cancelButton || {}]}>
+                        <Text style={[Styles.buttonText, customStyle.cancelText || {}]}>{cancelText}</Text>
+                      </View>
                     </TouchableHighlight>
                     <TouchableHighlight
                       underlayColor="transparent"
-                      onPress={this.confirmSelect}
-                      style={[Styles.modalButton, Styles.confirmButton]}>
-                      <Text style={Styles.buttonText}>Confirm</Text>
+                      activeOpacity={0.8}
+                      onPress={this.confirmSelect}>
+                      <View style={[Styles.modalButton, Styles.confirmButton, customStyle.confirmButton || {}]}>
+                        <Text style={[Styles.buttonText, customStyle.confirmText || {}]}>{confirmText}</Text>
+                      </View>
                     </TouchableHighlight>
                   </View>
                 </View>
@@ -156,16 +174,17 @@ class Label extends Component {
   static defaultProps = {
     onCancel: () => {},
     enable: true,
-    readOnly: false
+    readOnly: false,
+    customStyle: {}
   }
   constructor(props) {
     super(props);
   }
   render() {
-    const {enable, readOnly, onCancel} = this.props;
+    const {enable, readOnly, onCancel, customStyle} = this.props;
     return (
       <View style={[Styles.selectedItem, !enable && Styles.disableColor]}>
-        <Text style={[Styles.labelText, !enable && Styles.disableText]}
+        <Text style={[Styles.labelText, !enable && Styles.disableText, customStyle.text || {}]}
           numberOfLines={1} ellipsisMode="tail">{this.props.children}</Text>
         {enable && !readOnly && <TouchableHighlight
           style={Styles.closeContainer}
@@ -188,6 +207,9 @@ class ModalItem extends Component {
   static propTypes = {
     toggleSelect: PropTypes.func
   }
+  static defaultProps = {
+    customStyle: {}
+  }
   constructor (props) {
     super(props);
     this.isSelected = false;
@@ -200,6 +222,9 @@ class ModalItem extends Component {
     toggleSelect(data);
   }
   render () {
+    const {
+      customStyle
+    } = this.props;
     return (
       <TouchableHighlight
         activeOpacity={0.5}
@@ -207,9 +232,9 @@ class ModalItem extends Component {
         onPress={this._toggleSelect}>
         <View style={Styles.modalItem}>
           <Text style={Styles.modalText} numberOfLines={1} ellipsisMode="tail">{this.props.children}</Text>
-            <View style={[Styles.outerCircle, this.isSelected ? Styles.enableCircle : {}]}>
-              {this.isSelected && <View style={Styles.innerCircle}/>}
-            </View>
+          <View style={[Styles.outerCircle, this.isSelected ? Styles.enableCircle : {}, customStyle.outerCircle || {}]}>
+            {this.isSelected && <View style={[Styles.innerCircle, customStyle.innerCircle || {}]}/>}
+          </View>
         </View>
       </TouchableHighlight>
     );

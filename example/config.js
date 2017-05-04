@@ -2,7 +2,6 @@
 
 // #anchor#
 import Accordion from '../components/Accordion/example';
-import PressMenu from '../components/PressMenu/example';
 import ZoomImage from '../components/ZoomImage/example';
 import ActionSheet from '../components/ActionSheet/example';
 import DatePicker from '../components/DatePicker/example';
@@ -18,7 +17,6 @@ import Tab from '../components/Tab/example';
 const listData = {
   // #list#
   Accordion,
-  PressMenu,
   ZoomImage,
   ActionSheet,
   DatePicker,

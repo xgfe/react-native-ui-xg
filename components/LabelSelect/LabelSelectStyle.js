@@ -87,19 +87,19 @@ export default StyleSheet.create({
     height: height * 0.6 - 80
   },
   buttonView: {
-    height: 40,
-    backgroundColor: Color.main,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
     flexDirection: 'row',
     justifyContent: 'space-around'
   },
   modalButton: {
+    height: 40,
     width: width * 0.3,
     paddingLeft: 20,
     paddingRight: 20,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: Color.main
   },
   modalItem: {
     height: 50,

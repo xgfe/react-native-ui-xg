@@ -100,8 +100,10 @@ it('interact with modal', () => {
   expect(arr[0]).toEqual(item);
   expect(tree.state('isModalVisible')).toEqual(false);
   select.openModal();
+  expect(tree.state('isModalVisible')).toEqual(true);
   select.cancelSelect();
   expect(tree.state('isModalVisible')).toEqual(false);
+  select.confirmSelect();
 });
 
 it('selecte a item', () => {
