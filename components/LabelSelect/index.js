@@ -231,7 +231,12 @@ class ModalItem extends Component {
         underlayColor="transparent"
         onPress={this._toggleSelect}>
         <View style={Styles.modalItem}>
-          <Text style={Styles.modalText} numberOfLines={1} ellipsisMode="tail">{this.props.children}</Text>
+          <Text
+            style={[Styles.modalText, customStyle.modalText || {}]}
+            numberOfLines={1}
+            ellipsisMode="tail">
+            {this.props.children}
+          </Text>
           <View style={[Styles.outerCircle, this.isSelected ? Styles.enableCircle : {}, customStyle.outerCircle || {}]}>
             {this.isSelected && <View style={[Styles.innerCircle, customStyle.innerCircle || {}]}/>}
           </View>
