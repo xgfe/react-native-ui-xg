@@ -16,7 +16,7 @@
     "android": "react-native run-android"
   },
   "dependencies": {
-    "react-native-datepicker": "^1.4.4",
+    "react-native-datepicker": "^1.5.0",
     "react-native-drawer-menu": "^0.2.3",
     "react-native-grading": "^1.0.3",
     "react-native-label-select": "^1.0.10",
