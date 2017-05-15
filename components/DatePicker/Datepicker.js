@@ -284,7 +284,7 @@ class DatePicker extends Component {
     } = this.props;
 
     if (showIcon) {
-      if (!!iconComponent) {
+      if (iconComponent) {
         return iconComponent;
       }
       return (
