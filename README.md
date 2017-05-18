@@ -27,6 +27,7 @@ import {
   DatePicker,
   ActionSheet,
   LabelSelect,
+  CalendarSelect
 } from 'react-native-ui-xg';
 ```
 ### for one by one
@@ -45,7 +46,7 @@ npm install react-native-drawer-menu --save
 npm install react-native-label-select --save
 npm install react-native-accordion-xg --save
 npm install react-native-action-sheet-xg --save
-
+npm install react-native-calendar-select --save
 ```
 
 ## Components
@@ -63,6 +64,7 @@ npm install react-native-action-sheet-xg --save
 * [DrawerMenu](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Drawer/README.md)
 * [LabelSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/LabelSelect/README.md)
 * [ActionSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/ActionSheet/README.md)
+* [ActionSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/CalendarSelect/README.md)
 
 ## Example
 

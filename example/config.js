@@ -1,6 +1,7 @@
 // !important: Don't modify this file manually.
 
 // #anchor#
+import CalendarSelect from '../components/CalendarSelect/example';
 import Accordion from '../components/Accordion/example';
 import ZoomImage from '../components/ZoomImage/example';
 import ActionSheet from '../components/ActionSheet/example';
@@ -16,6 +17,7 @@ import Tab from '../components/Tab/example';
 
 const listData = {
   // #list#
+  CalendarSelect,
   Accordion,
   ZoomImage,
   ActionSheet,
