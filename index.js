@@ -1,4 +1,3 @@
-
 export {default as DatePicker} from 'react-native-datepicker';
 export {default as Button} from 'react-native-buttons';
 export {default as DrawerMenu} from 'react-native-drawer-menu';
@@ -11,3 +10,4 @@ export {default as Link} from 'react-native-link-xg';
 export {default as Tab} from 'react-native-tab-xg';
 export {default as StyleSheet} from 'react-native-stylesheet-xg';
 export {default as Accordion} from 'react-native-accordion-xg';
+export {default as CalendarSelect} from 'react-native-calendar-select';

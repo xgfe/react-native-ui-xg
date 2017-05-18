@@ -43,10 +43,13 @@ exports[`test renders a modal item 1`] = `
       ellipsizeMode="tail"
       numberOfLines={1}
       style={
-        Object {
-          "fontSize": 16,
-          "width": 380,
-        }
+        Array [
+          Object {
+            "fontSize": 16,
+            "width": 380,
+          },
+          Object {},
+        ]
       }>
       C
     </Text>

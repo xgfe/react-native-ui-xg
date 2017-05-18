@@ -28,7 +28,8 @@
     "react-native-link-xg": "^0.0.1",
     "react-native-tab-xg": "^0.0.1",
     "react-native-accordion-xg": "^0.0.1",
-    "react-native-action-sheet-xg": "^0.0.1"
+    "react-native-action-sheet-xg": "^0.0.1",
+    "react-native-calendar-select": "^0.1.0"
   },
   "devDependencies": {
     "babel-jest": "18.0.0",
