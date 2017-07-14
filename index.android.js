@@ -4,10 +4,4 @@
  * @flow
  */
 
-import {
-  AppRegistry
-} from 'react-native';
-
-import reactNativeUiXg from './example/Home';
-
-AppRegistry.registerComponent('reactNativeUiXg', () => reactNativeUiXg);
+require('./index.ios');

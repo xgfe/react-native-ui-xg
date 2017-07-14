@@ -5,38 +5,18 @@ import {
   ScrollView,
   TouchableHighlight,
   Image,
-  Navigator,
-  StatusBar,
-  Platform
 } from 'react-native';
-import CustomNavigationBarStyles from './CustomNavigationBarStyles';
+
 import styles from './HomeStyle';
-import listData from './config';
+import {scenes} from './registerScreens';
 
-export default class reactNativeUiXg extends Component {
-  // 构造
-  constructor(props) {
-    super(props);
-
-    // 初始状态
-    this.state = {title: 'Home'};
-    this.renderContent = this.renderContent.bind(this);
-  }
-
-  renderContent(route, navigator) {
-    this.navigator = navigator;
-
-    if (listData[route.key]) {
-      const Com = listData[route.key];
-      this.state.title = route.key;
-      return <Com />;
-    }
-
-    this.state.title = 'Home';
+export default class Home extends Component {
+  render() {
     let listStr = [];
-    for (let key in listData) {
+    for (let key in scenes) {
       listStr.push(
-        <TouchableHighlight underlayColor="lightcyan" onPress={() => this.navigator.push({key})} key={key}>
+        <TouchableHighlight underlayColor="lightcyan" onPress={() => this.props.navigator.push({screen: key, title: key,  animationType: 'slide-horizontal',
+})} key={key}>
           <View style={styles.listItem}>
             <Text style={styles.itemText}>{key}</Text>
             <Image style={styles.right} source={require('./res/right.png')}/>
@@ -52,45 +32,6 @@ export default class reactNativeUiXg extends Component {
           {listStr}
         </View>
       </ScrollView>
-    );
-  }
-
-  render() {
-    return (
-      <View style={[{flex: 1, backgroundColor: '#f7f7f8'}, Platform.OS === 'ios' && {paddingTop: 20}]}>
-        <StatusBar
-          backgroundColor="#f7f7f8"
-          barStyle="dark-content"
-        />
-        <Navigator
-          initialRoute={{key: 'home'}}
-          renderScene={this.renderContent}
-          sceneStyle={styles.sceneStyle}
-          navigationBar={
-            <Navigator.NavigationBar
-              navigationStyles={CustomNavigationBarStyles}
-              routeMapper={{
-                LeftButton: (route, navigator, index, navState) => {
-                  return (
-                    <TouchableHighlight style={styles.back} underlayColor="lightcyan" onPress={this.navigator.pop}>
-                      <Text style={styles.backText}>Back</Text>
-                    </TouchableHighlight>
-                  );
-                },
-                RightButton: (route, navigator, index, navState) => {},
-                Title: (route, navigator, index, navState) => {
-                  return (
-                    <View style={styles.navTitle}>
-                      <Text style={styles.navTitleText}>{this.state.title}</Text>
-                    </View>
-                  );
-                }
-              }}
-              style={styles.navigationBar}
-            />
-          }
-        />
-      </View>
     );
   }
 }
