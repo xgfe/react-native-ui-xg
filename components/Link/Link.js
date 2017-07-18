@@ -7,8 +7,6 @@ import {
 } from 'react-native';
 import Style, {IMG} from './LinkStyle';
 
-
-
 class Link extends Component {
 
   skipIcon = {

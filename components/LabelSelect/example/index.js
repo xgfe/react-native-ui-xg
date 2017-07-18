@@ -130,8 +130,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     justifyContent: 'center',
-    alignItems: 'flex-start',
-    backgroundColor: '#e3eeee'
+    alignItems: 'flex-start'
   },
   labelSelect: {
     marginTop: 5,

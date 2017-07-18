@@ -48,13 +48,13 @@ export default class input extends Component {
         <Input label="error" error initJudge value={this.state.test6} placeholder="内容为error的状态，可定制" onChangeText={(text) => {
           this.setState({test6: text});
         }}/>
-         <Input label="style"
-          labelStyle={{color: '#96e4da'}}
-          focusStyle={{backgroundColor: '#eee'}}
-          wrapperStyle={{marginTop: 10}}
-          value={this.state.test7} placeholder="style的定制" onChangeText={(text) => {
-            this.setState({test7: text});
-          }}/>
+        <Input label="style"
+               labelStyle={{color: '#96e4da'}}
+               focusStyle={{backgroundColor: '#eee'}}
+               wrapperStyle={{marginTop: 10}}
+               value={this.state.test7} placeholder="style的定制" onChangeText={(text) => {
+          this.setState({test7: text});
+        }}/>
       </View>
     );
   }
@@ -62,10 +62,7 @@ export default class input extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#fff'
   },
   welcome: {
     fontSize: 20,

@@ -40,7 +40,7 @@ export {scenes};
 
 // register all screens of the app (including internal ones)
 export default function registerScreens() {
-  for(let key in scenes) {
+  for (let key in scenes) {
     Navigation.registerComponent(key, () => scenes[key]);
   }
 }

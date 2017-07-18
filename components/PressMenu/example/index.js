@@ -27,8 +27,7 @@ export default class PressMenuExample extends Component {
 const styles = StyleSheet.create({
   container: {
     width: 120,
-    height: 60,
-    backgroundColor: 'rgb(24, 190, 215)'
+    height: 60
   },
   example: {
     flex: 1,

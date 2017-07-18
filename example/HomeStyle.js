@@ -5,52 +5,24 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f1f1f1'
   },
-  navigationBar: {
-    backgroundColor: '#f7f7f8',
-    height: 44,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc'
-  },
-  back: {
-    width: 43,
-    height: 43,
-    marginLeft: 10,
-    justifyContent: 'center'
-  },
-  backText: {
-    fontSize: 16,
-    color: '#333'
-  },
-  navTitle: {
-    height: 43,
-    justifyContent: 'center'
-  },
-  navTitleText: {
-    fontSize: 18,
-    color: '#333'
-  },
-  sceneStyle: {
-    flex: 1,
-    marginTop: 44
-  },
   title: {
     margin: 20,
     fontSize: 25,
     textAlign: 'center',
-    color: '#333'
+    color: '#666'
   },
   listView: {
+    marginBottom: 20,
     backgroundColor: '#fff',
     borderTopWidth: 1,
-    borderTopColor: '#ddd'
+    borderTopColor: '#ddd',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd'
   },
   listItem: {
     flexDirection: 'row',
-    height: 40,
-    paddingLeft: 10,
-    alignItems: 'center',
-    borderBottomWidth: 1,
-    borderBottomColor: '#ddd'
+    height: 46,
+    alignItems: 'center'
   },
   itemText: {
     flex: 1,
@@ -58,9 +30,23 @@ const styles = StyleSheet.create({
     color: '#333'
   },
   right: {
-    width: 20,
-    height: 20,
+    width: 18,
+    height: 18,
     marginRight: 5
+  },
+  itemBody: {
+    flex: 1,
+    height: 46,
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    alignItems: 'center',
+    borderBottomColor: '#ddd'
+  },
+  logo: {
+    width: 36,
+    height: 36,
+    marginLeft: 5,
+    marginRight: 5,
   }
 });
 

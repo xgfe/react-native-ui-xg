@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
   example: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#fff'
   },
   content: {
     padding: 10,

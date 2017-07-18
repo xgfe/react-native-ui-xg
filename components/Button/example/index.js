@@ -14,7 +14,7 @@ class button extends Component {
   render() {
     return (
       <View style={
-        {flex: 1, marginLeft: 10, backgroundColor: '#F5FCFF'}
+        {flex: 1}
       }>
       <View style={
         {flex: 1, flexDirection: 'row', alignItems: 'center'}

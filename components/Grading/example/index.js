@@ -134,9 +134,7 @@ export default class grading extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#F5FCFF'
-  },
+  container: {},
   welcome: {
     marginTop: 30,
     fontSize: 20,
