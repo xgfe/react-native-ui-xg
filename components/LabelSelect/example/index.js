@@ -139,10 +139,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 6,
     borderStyle: 'dashed',
-    borderColor: '#6dc2a2'
+    borderColor: '#999'
   },
   text: {
     fontSize: 16,
-    color: 'rgb(13, 131, 144)'
+    color: '#999'
   }
 });

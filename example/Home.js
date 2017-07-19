@@ -24,7 +24,7 @@ export default class Home extends Component {
       screen: key,
       title: key,
       animationType: 'slide-horizontal'
-    })
+    });
   }
 
   render() {

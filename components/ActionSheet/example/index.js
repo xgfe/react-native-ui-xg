@@ -8,6 +8,7 @@ import {
   View,
   Text
 } from 'react-native';
+import {Button} from '../../../';
 
 import ActionSheet from '../index';
 
@@ -41,19 +42,17 @@ export default class ActionSheetExample extends Component {
 
     return (
       <View style={styles.container}>
-        <Text onPress={this.showActionSheet} style={styles.button}>
-          Click to show the ActionSheet
-        </Text>
+        <Button onPress={this.showActionSheet} theme="blue">Click to show the ActionSheet</Button>
         <Text>
           Clicked button: {this.state.clicked}
         </Text>
         <ActionSheet
-          tintColor = {'green'}
+          tintColor={'#0076ff'}
           title={'title'}
           message={'message'}
-          options = {BUTTONS}
+          options={BUTTONS}
           cancelButtonIndex = {CANCEL_INDEX}
-          destructiveButtonIndex = {DESTRUCTIVE_INDEX}
+          destructiveButtonIndex={DESTRUCTIVE_INDEX}
           callback = {(buttonIndex) => {
             this.setState({clicked: BUTTONS[buttonIndex]});
           }}
@@ -72,7 +71,8 @@ const styles = StyleSheet.create({
   },
   button: {
     marginBottom: 10,
-    fontWeight: '500'
+    fontWeight: '500',
+    backgroundColor: '#1194f6'
   },
   container: {
     flex: 1,

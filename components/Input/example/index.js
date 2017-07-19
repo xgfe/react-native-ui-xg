@@ -53,8 +53,8 @@ export default class input extends Component {
                focusStyle={{backgroundColor: '#eee'}}
                wrapperStyle={{marginTop: 10}}
                value={this.state.test7} placeholder="style的定制" onChangeText={(text) => {
-          this.setState({test7: text});
-        }}/>
+                 this.setState({test7: text});
+               }}/>
       </View>
     );
   }

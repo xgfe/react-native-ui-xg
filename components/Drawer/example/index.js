@@ -36,7 +36,7 @@ export default class DrawerExample extends Component {
         drawerContent={drawerContent}
         type={Drawer.types.Default}
         customStyles={{drawer: styles.drawer}}
-        drawerPosition={Drawer.positions.Right}
+        drawerPosition={Drawer.positions.Left}
         easingFunc={Easing.ease}
       >
         <View style={styles.content}>

@@ -47,14 +47,15 @@ export default class AccordionExample extends Component {
     return (
       <View style={styles.example}>
         <Accordion
-        items = {items}
-        headerRender = {this.renderHeader}
-        contentRender = {this.renderContent}
-        headerName = "name"
-        contentName = "description"
-        maxHeight = {90}
-        duration = {200}
-        backgroundColor = {'#65b2d0'}
+          style={styles.accordion}
+          items = {items}
+          headerRender = {this.renderHeader}
+          contentRender = {this.renderContent}
+          headerName = "name"
+          contentName = "description"
+          maxHeight = {90}
+          duration = {200}
+          backgroundColor = {'#fff'}
         />
       </View>
     );
@@ -65,19 +66,23 @@ const styles = StyleSheet.create({
   example: {
     flex: 1,
     justifyContent: 'center',
+    paddingTop: 40,
+    backgroundColor: '#f1f1f1'
+  },
+  accordion: {
+    borderTopWidth: 1,
+    borderTopColor: '#666'
   },
   content: {
     padding: 10,
-    backgroundColor: '#31597c'
+    backgroundColor: '#fff'
   },
   header: {
     padding: 10,
-    backgroundColor: '#18314f'
+    backgroundColor: '#fff'
   },
   headerText: {
-    color: '#f8f7d1'
   },
   contentText: {
-    color: '#8bbeb2'
   }
 });
