@@ -124,7 +124,7 @@ export default class ActionSheetAndroid extends Component {
           console.debug('close');
         }}
       >
-        <View style={Style.wrapper}>
+        <View style={[Style.wrapper, this.props.style]}>
           <Animated.View style={[Style.body, {top: this.state.animatedHeight}]}>
             <View style={[Style.hackWrapper,
               !cancelButtonIndex && Style.hackCancelStyle,
@@ -153,7 +153,7 @@ export default class ActionSheetAndroid extends Component {
                     ]}>
                       <Text style={[
                         Style.itemText, tintColor && {color: tintColor},
-                        destructiveButtonIndex === item.index && Style.deleteText]}>
+                        destructiveButtonIndex === item.index && Style.deleteText && this.props.destructiveTextStyle, destructiveButtonIndex !== item.index && this.props.itemTextStyle]}>
                         {item.item}
                       </Text>
                     </View>
@@ -169,7 +169,7 @@ export default class ActionSheetAndroid extends Component {
               onPress={() => {this.choseItem(cancelButtonIndex);}} >
                 <View style={[Style.itemCancel,
                   (this.WHOLEACTIONHEIGHT < this.MAXACTIONHEIGHT) && Style.border]}>
-                    <Text style={[Style.itemText, Style.cancelText, tintColor && {color: tintColor}]}>{options[cancelButtonIndex]}</Text>
+                    <Text style={[Style.itemText, Style.cancelText, tintColor && {color: tintColor}, this.props.cancelTextStyle]}>{options[cancelButtonIndex]}</Text>
                 </View>
               </TouchableHighlight>
             )}
@@ -184,10 +184,11 @@ const Style = StyleSheet.create({
   wrapper: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#00000099'
+    backgroundColor: '#00000099',
+    justifyContent: 'flex-end'
   },
   body: {
-    width: width - 20
+    width: width - 20,
   },
   itemContainer: {
     alignItems: 'center',
