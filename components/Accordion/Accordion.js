@@ -15,7 +15,7 @@ export default class Accordion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeItem: undefined
+      activeItem: this.props.initialActiveItem
     };
   }
 
@@ -86,5 +86,6 @@ const styles = StyleSheet.create({
 
 Accordion.defaultProps = {
   items: [],
-  duration: 500
+  duration: 500,
+  initialActiveItem: undefined
 };

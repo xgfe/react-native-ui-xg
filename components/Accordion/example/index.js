@@ -47,6 +47,7 @@ export default class AccordionExample extends Component {
     return (
       <View style={styles.example}>
         <Accordion
+        initialActiveItem = {1}
         items = {items}
         headerRender = {this.renderHeader}
         contentRender = {this.renderContent}
