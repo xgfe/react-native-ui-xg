@@ -64,7 +64,7 @@ npm install react-native-calendar-select --save
 * [DrawerMenu](https://github.com/xgfe/react-native-ui-xg/blob/master/components/Drawer/README.md)
 * [LabelSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/LabelSelect/README.md)
 * [ActionSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/ActionSheet/README.md)
-* [ActionSheet](https://github.com/xgfe/react-native-ui-xg/blob/master/components/CalendarSelect/README.md)
+* [CalendarSelect](https://github.com/xgfe/react-native-ui-xg/blob/master/components/CalendarSelect/README.md)
 
 ## Example
 
